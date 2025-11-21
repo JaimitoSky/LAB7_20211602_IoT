@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_tareas"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Tareas" />
+
+    <item
+        android:id="@+id/menu_resumen"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="Resumen" />
+
+    <item
+        android:id="@+id/menu_perfil"
+        android:icon="@android:drawable/ic_menu_myprofile"
+        android:title="Mi Perfil" />
+
+</menu>
