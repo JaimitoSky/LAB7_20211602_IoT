@@ -8,6 +8,7 @@ import com.example.lab7_20211602_iot.repository.UserRepository;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -58,7 +59,6 @@ public class AuthService {
         auth.signOut();
     }
 
-    // Registro con microservicio de registro
     public void registerUser(String nombre,
                              String dni,
                              String email,
@@ -82,7 +82,6 @@ public class AuthService {
             return;
         }
 
-        // 1. Llamar microservicio /registro
         RegistroRequest req = new RegistroRequest(dni, email);
 
         registroApi.registrar(req).enqueue(new Callback<String>() {
