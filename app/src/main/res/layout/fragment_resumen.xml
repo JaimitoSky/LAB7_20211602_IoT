@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:text="Resumen"
+        android:id="@+id/tvTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
-</FrameLayout>
+        android:text="Total de tareas: 0"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvCompletadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tareas completadas: 0"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/tvPendientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tareas pendientes: 0"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>
