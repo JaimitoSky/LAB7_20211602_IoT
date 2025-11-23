@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
+    id 'com.google.gms.google-services'
+
 }
 
 android {
@@ -54,22 +56,22 @@ dependencies {
     implementation libs.retrofit
     implementation libs.converter.gson
 
-    implementation libs.glide
-    annotationProcessor libs.compiler
+    implementation "com.github.bumptech.glide:glide:4.16.0"
+    annotationProcessor "com.github.bumptech.glide:compiler:4.16.0"
+    implementation "com.squareup.retrofit2:converter-scalars:2.9.0"
 
     implementation libs.recyclerview
 
-    implementation libs.navigation.fragment
-    implementation libs.navigation.ui
+    implementation libs.androidx.navigation.fragment
+    implementation libs.androidx.navigation.ui
 
     implementation libs.core.ktx
     implementation libs.androidx.appcompat
 
     implementation libs.logging.interceptor
 
-    implementation libs.retrofit2.retrofit
-    implementation libs.squareup.retrofit
-    implementation libs.squareup.converter.gson
+    implementation libs.retrofit.v290
+    implementation libs.converter.gson.v290
 
-    implementation libs.retrofit2.converter.gson
+    implementation libs.okhttp3.logging.interceptor
 }

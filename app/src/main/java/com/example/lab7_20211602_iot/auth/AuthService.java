@@ -133,6 +133,7 @@ public class AuthService {
 
             @Override
             public void onFailure(Call<String> call, Throwable t) {
+                android.util.Log.e("AuthService", "Error llamando a registro-service", t);
                 cb.onError("No se pudo conectar al microservicio de registro");
             }
         });
