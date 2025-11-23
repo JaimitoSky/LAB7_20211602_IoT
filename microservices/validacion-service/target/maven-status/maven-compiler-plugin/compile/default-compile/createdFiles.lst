@@ -1,0 +1,3 @@
+modelos\validacionservice\controller\ValidacionController.class
+modelos\validacionservice\dto\ValidacionResponse.class
+modelos\validacionservice\ValidacionServiceApplication.class

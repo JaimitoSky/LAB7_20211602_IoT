@@ -1,0 +1,5 @@
+modelos\registroservice\RegistroServiceApplication.class
+modelos\registroservice\dto\RegistroRequest.class
+modelos\registroservice\client\ValidacionClient.class
+modelos\registroservice\controller\RegistroController.class
+modelos\registroservice\dto\ValidacionResponse.class
