@@ -40,7 +40,6 @@ public class TareaRepository {
                 .collection("tareas");
     }
 
-    // Escucha en tiempo real la lista de tareas
     public ListenerRegistration listenTareas(TareasListener listener) {
         CollectionReference ref = getUserTareasRef();
         if (ref == null) {
